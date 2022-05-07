@@ -46,7 +46,7 @@ body {
 }
 
 .logo_img {
-    width: 3.2rem;
+    width: 5rem;
     padding-top: 0.5rem;
 }
 
@@ -151,44 +151,43 @@ svg {
 /****************/
 
 .container {
-    padding: 2rem;
+    padding: 0 2rem 2rem;
     max-width: 55.2rem;
     display: flex;
-}
-
-.text,
-.image {
-    margin: 0 1.8rem;
 }
 
 
 /* TEXTUAL SECTION */
 
 .text {
-    width: 55%;
+    width: 53%;
+    margin-right: auto;
 }
 
 .image {
-    width: 45%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
     color: hsl(0, 0%, 8%);
-    margin-top: 3rem;
+    margin-top: 2.6rem;
     font-weight: 700;
-    line-height: 2.5rem;
+    font-size: 300%;
 }
 
 .desc {
+    width: 95%;
     color: hsl(0, 0%, 41%);
-    margin: 2.2rem 0 1.8rem;
+    margin: 2.2rem 0;
 }
 
 .learn {
     border-radius: 0.5rem;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
-    margin-bottom: 8.5rem;
+    margin-bottom: 7.5rem;
     height: 2.4rem;
     width: 7rem;
 }
@@ -201,6 +200,7 @@ svg {
 }
 
 .sponsor {
+    width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
@@ -214,9 +214,9 @@ svg {
 
 .firm {
     width: 5rem;
-    margin-right: 1rem;
     cursor: pointer;
     transition: 0.4s;
+    vertical-align: sub;
 }
 
 .firm:hover {
@@ -262,6 +262,8 @@ svg {
 @media screen and (min-width:850px) {
     .menu {
         width: 100% !important;
+        height: auto !important;
+        display: flex !important;
     }
 }
 
@@ -341,9 +343,6 @@ svg {
     .sub li {
         padding: 0;
     }
-    .toggle {
-        display: block;
-    }
     .evidence {
         background-color: transparent !important;
     }
@@ -370,16 +369,28 @@ svg {
         order: 1;
         width: 100%;
     }
+    .title {
+        font-size: 2.5rem;
+    }
     .text {
         order: 2;
-        width: 90%;
+        width: 93%;
         margin: auto;
         text-align: center;
+    }
+    .desc {
+        margin: 2rem auto !important;
     }
     .learn {
         margin-bottom: 4rem;
     }
     .sponsor {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
         margin-bottom: 4rem;
+    }
+    .sponsor li {
+        margin-right: 0;
     }
 }

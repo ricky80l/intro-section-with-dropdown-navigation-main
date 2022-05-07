@@ -92,8 +92,6 @@ function menuMob() {
     if ($(window).width() < 850) {
         var mainH = $(".main").height();
         $(".menu").height(mainH);
-    } else {
-        $(".menu").css("height", "auto");
     };
 };
 $(window).resize(function() {
