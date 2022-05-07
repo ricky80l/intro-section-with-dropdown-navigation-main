@@ -96,10 +96,19 @@ function menuMob() {
         $(".menu").css("height", "auto");
     };
 };
+$(window).resize(function() {
+    scrollMenu();
+    console.log($(document).height() + " " + $(document).width());
+});
 
+scrollMenu();
 
-// $(window).scroll(function() {
-//     var x = $(window).scrollTop();
-//     $(".item_list").css("padding-top", x);
-//     $(".close").css("top", x);
-// });
+function scrollMenu() {
+    if ($(document).height() > $(document).width()) {
+        $(window).scroll(function() {
+            var x = $(window).scrollTop();
+            $(".item_list").css("padding-top", x);
+            $(".close").css("top", x);
+        });
+    };
+};
