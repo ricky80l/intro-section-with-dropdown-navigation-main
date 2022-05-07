@@ -61,6 +61,9 @@ function close() {
     $(".menu").animate({
         width: "0rem"
     }, 500);
+    setTimeout(function() {
+        $(".menu").css("display", "none");
+    }, 500);
     menuOpen = false;
 };
 
