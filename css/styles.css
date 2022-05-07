@@ -1,0 +1,385 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif;
+    border: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* MAIN SECTION */
+
+.main {
+    font-size: 1rem;
+    padding: 1rem 1.5rem 1.5rem;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+
+/****************/
+
+
+/* MENU SECTION */
+
+.logo_menu,
+.menu {
+    display: flex;
+    font-size: 1rem;
+}
+
+.logo_menu {
+    margin-bottom: 2rem;
+}
+
+.logo_img {
+    width: 3.2rem;
+    padding-top: 0.5rem;
+}
+
+.close,
+.burger_menu {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu li {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    color: hsl(0, 0%, 41%);
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+}
+
+.envy {
+    position: relative;
+}
+
+.sub {
+    position: absolute;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 0.3rem;
+    top: 2.5rem;
+    display: none;
+    padding: 0.5rem;
+    z-index: 99;
+    box-shadow: 1px 3px 15px 0px rgba(0, 0, 0, 0.4);
+}
+
+.max {
+    display: none;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: initial;
+}
+
+.sub_1 {
+    left: -1rem;
+}
+
+.sub_2 {
+    left: 0rem;
+}
+
+.sub li {
+    margin: 0.4rem 0;
+    width: max-content;
+    cursor: pointer;
+}
+
+.sub li img {
+    margin-right: 0.5rem;
+    vertical-align: -3px;
+}
+
+.sub li:hover {
+    transition: 0.2s;
+    color: hsl(0, 0%, 8%);
+}
+
+svg {
+    margin-left: 0.5rem;
+    margin-top: 0;
+}
+
+.item_list,
+.user {
+    display: flex;
+}
+
+.register {
+    border: 2px solid hsl(0, 0%, 41%);
+    border-radius: 0.5rem;
+}
+
+.register:hover {
+    border-color: hsl(0, 0%, 8%);
+}
+
+.envy:hover,
+.sub li:hover {
+    color: hsl(0, 0%, 8%) !important;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 0.5rem;
+}
+
+
+/****************/
+
+.container {
+    padding: 2rem;
+    max-width: 55.2rem;
+    display: flex;
+}
+
+.text,
+.image {
+    margin: 0 1.8rem;
+}
+
+
+/* TEXTUAL SECTION */
+
+.text {
+    width: 55%;
+}
+
+.image {
+    width: 45%;
+}
+
+.title {
+    color: hsl(0, 0%, 8%);
+    margin-top: 3rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.desc {
+    color: hsl(0, 0%, 41%);
+    margin: 2.2rem 0 1.8rem;
+}
+
+.learn {
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    margin-bottom: 8.5rem;
+    height: 2.4rem;
+    width: 7rem;
+}
+
+.learn:hover {
+    background-color: hsl(0, 0%, 98%);
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    transition: 0.2s;
+}
+
+.sponsor {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.sponsor li {
+    margin: 0;
+}
+
+.firm {
+    width: 5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.firm:hover {
+    transform: scale(1.07);
+    transition: 0.4s;
+}
+
+.firm:last-child {
+    margin-right: 0;
+}
+
+
+/****************/
+
+.image img {
+    width: 100%;
+}
+
+.mob {
+    display: none;
+}
+
+
+/****************/
+
+
+/* FOOTER SECTION */
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 4rem 0 2rem;
+}
+
+.attribution a {
+    font-size: 0.8rem;
+    color: hsl(228, 45%, 44%);
+}
+
+
+/****************/
+
+@media screen and (min-width:850px) {
+    .menu {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .burger_menu {
+        display: block;
+        margin: auto 0;
+        opacity: 0.5;
+        transition: 0.2s;
+    }
+    .burger_menu:hover {
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .main {
+        padding: 0.5rem 0;
+        overflow-y: hidden;
+    }
+    .logo_menu {
+        width: 93%;
+        justify-content: space-between;
+        margin: 0 auto 1.5rem;
+    }
+    .logo img {
+        width: 5rem;
+    }
+    .menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        display: none;
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        height: max-content;
+        right: 0;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+        padding-top: 1rem;
+        /* width: min-content; */
+        width: 0;
+        background-color: hsl(0, 0%, 98%);
+    }
+    .close {
+        display: block;
+        width: 1.4rem;
+        position: relative;
+        left: 11.5rem;
+        opacity: 0.5;
+    }
+    .close:hover {
+        opacity: 1;
+        transition: 0.2s;
+    }
+    .menu li {
+        float: none;
+        margin-left: 0;
+        width: 7rem;
+        margin-bottom: 1rem;
+    }
+    .item_list,
+    .user {
+        display: block;
+        padding: 0 3rem;
+    }
+    .item_list {
+        padding-top: 4rem;
+    }
+    li:hover {
+        background-color: transparent !important;
+    }
+    .sub {
+        position: static;
+        margin-left: 0.5rem;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .sub li {
+        padding: 0;
+    }
+    .toggle {
+        display: block;
+    }
+    .evidence {
+        background-color: transparent !important;
+    }
+    .user {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+    .image,
+    .text {
+        margin: 0;
+    }
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .image {
+        order: 1;
+        width: 100%;
+    }
+    .text {
+        order: 2;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .learn {
+        margin-bottom: 4rem;
+    }
+    .sponsor {
+        margin-bottom: 4rem;
+    }
+}
